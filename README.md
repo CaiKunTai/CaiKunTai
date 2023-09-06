@@ -1,5 +1,6 @@
 ### Hi there 👋
-
+- Hello, everyone. My name is Cai Kuntai. I am a student of Class 4 of Computer Science and Technology, Grade 21, Guangdong University of Technology.
+- I am a keen photographer and love to capture the beautiful moments in life, from tiny details in everyday life to magnificent natural scenes. I also love traveling and believe that traveling is a special experience and education, so I try to explore as many different places and cultures as possible. I am passionate, curious, and believe that every experience in life is a valuable learning opportunity, and can't wait to embrace the unknown adventure and challenge. I love sports, and the process of training makes me have a healthy body, but also makes my will more firm and calm.
 <!--
 **CaiKunTai/CaiKunTai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
