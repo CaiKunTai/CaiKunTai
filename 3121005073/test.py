@@ -3,6 +3,7 @@ import tempfile
 import os
 from main import read_file, clean_text, calculate_similarity
 
+
 class MyTestCase(unittest.TestCase):
     def setUp(self):
         # 在每个测试函数执行前创建一个临时测试文件
@@ -20,7 +21,7 @@ class MyTestCase(unittest.TestCase):
         result = read_file(self.original_file_path)
         self.assertEqual(result, 'This is a test file.')
         # 测试文件不存在的情况
-        with self.assertRaises(FileNotFoundError):
+        with self.assertRaises(SystemExit):
             read_file('non_existent_file.txt')
         # 测试文件内容为空的情况
         empty_file_path = os.path.join(self.temp_dir.name, 'empty.txt')
@@ -50,7 +51,7 @@ class MyTestCase(unittest.TestCase):
         similarity = calculate_similarity(original_text, copied_text)
         self.assertEqual(similarity, 1.0)  # 两个仅大小写不同的文本，相似度应为1.0
         original_text = 'This is a test.'
-        copied_text = 'This, is a Test.'
+        copied_text = 'This, is a test.'
         similarity = calculate_similarity(original_text, copied_text)
         self.assertEqual(similarity, 1.0)  # 两个仅标点符号不同的文本，相似度应为1.0
         original_text = 'This is a test.'
@@ -66,6 +67,7 @@ class MyTestCase(unittest.TestCase):
         copied_empty_text = ''
         similarity = calculate_similarity(original_text, copied_empty_text)
         self.assertEqual(similarity, 0.0)  # 一个文本为空，相似度应为0.0
+
 
 if __name__ == '__main__':
     unittest.main()
